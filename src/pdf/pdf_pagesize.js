@@ -5,11 +5,11 @@ const puppeteer = require('puppeteer');
 (async () => {
     const browser = await puppeteer.launch({headless: true});
     const page = await browser.newPage();
-    await page.goto('https://naver.com', {
+
+    await page.goto('https://www.naver.com', {
         waitUntil: 'networkidle2',
     });
-
-
+    
     // 페이지 내에서 스케일 값을 동적으로 계산하고 적용하는 스크립트
     await page.evaluate(() => {
         // 동적으로 div 요소를 생성
