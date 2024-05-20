@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/static/css/checkup-report.css">
+    <link rel="stylesheet" href="/src/static/css/lbweb-corporate-report.css">
+    <link rel="stylesheet" href="/src/static/css/lb-corp-common.css">
+    <link rel="stylesheet" href="/src/static/css/material.css">
+    <link rel="stylesheet" href="/src/static/css/lbweb-corporate-popup.css">
+    <link rel="stylesheet" href="/src/static/css/Syncfusion.css">
+    <link rel="stylesheet" href="/src/static/css/Icon.css">
+    <link rel="stylesheet" href="/src/static/css/lb-corporate-checkupreport.css">
+    <link rel="stylesheet" href="/src/static/css/lbweb-corporate-component.css">
+    <link rel="stylesheet" href="/src/static/css/lbweb-corporate-dropdown-list.css">
+    <link rel="stylesheet" href="/src/static/css/Main.css">
+    <link rel="stylesheet" href="/src/static/css/lb-corporate-resultsheet.css">
+    <title>Welcome Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f4f4f9;
+        }
+        .container {
+            text-align: center;
+        }
+        input, button {
+            padding: 10px;
+            margin-top: 20px;
+        }
+        button {
+            cursor: pointer;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .component {
+            page-break-inside: avoid; /* 컴포넌트 내에서 페이지 분할 방지 */
+            break-inside: avoid; /* CSS3 문법, 모던 브라우저 지원 */
+            overflow: hidden; /* 내용이 넘칠 경우 숨김 처리 */
+        }
+    </style>
+</head>
+<body>
+    <div id="report-contents" class="report-contents">
+        <div class="component">
+            <div class="title">종합 분석 결과</div>
+            
+            <div class="graph-sect" style="margin:0 0 50px 0;">
+                <style>
+                    #scoreChart{
+                        z-index : 1
+                    }
+                    .commentary {
+                        width: 100%;
+                        margin: 0 
+                    }
+                </style>
+            
+                <div class="graph-box only">
+                    <div style="height:288px; text-align: center; position: relative; align-self: center;">
+                        <img src="/_content/LBWeb.Corporate.Report/img/criteria/KR/scoreB0.png">
+                        <div style="position: absolute;top: 89%;left: 50%;transform: translate(-50%, -50%); font-size: 20px; font-weight:bold">78.4/100</div>
+                    </div>
+                    <div id="scoreChart">
+                        <score-chart>
+                                <style>
+                                    .tg, .tg * {
+                                        border-spacing:0;
+                                        border: 2px solid #e2e4e9;
+                                        border-collapse:collapse;
+                                        text-align:center;
+                                        font-weight:bold;
+                                    }
+                                    .tg td{
+                                        overflow:hidden;
+                                        padding:10px 5px;
+                                        word-break:normal;
+                                    }
+                                    .tg th{
+                                        padding:10px 5px;                            }
+                                    .tg .tg-baqh{
+                                    }
+                                    .tg .tg-7btt{
+                                        border-color:inherit;
+                                    }
+                                
+                                    .background-grey {
+                                        background-color: #f6f7f9;
+                                        color: #949aa8;
+                                    }
+                                    .background-red {
+                                        background-color: #f7e3e7;
+                                        border-bottom : 3px solid #cb4d61;
+                                        color : #cb4d61
+                                    }
+                                    .background-joo {
+                                        background-color: #fdebdd;
+                                                border-bottom : 3px solid #f47b25;
+                                                color : #f47b25;
+                                    }
+                                    .background-green {
+                                        background-color: #e4f6f2;
+                                                border-bottom : 3px solid #53c6a9;
+                                            color : #53c6a9;
+                                    }
+                                    .background-blue {
+                                        background-color: #e4eef6;
+                                                border-bottom : 3px solid #5396c6;
+                                                color : #5396c6;
+                                    }
+                                    .grey-font {
+                                                color : #636875
+                                    }
+                                    .start {
+                                        position: absolute;
+                                        left: 0;
+                                        bottom: -35px;
+                                        border: 0;
+                                        color: #949AA8;
+                                    }
+                                    .mid {
+                                        position: absolute;
+                                        right: -11px;
+                                        bottom: -35px;
+                                        border: 0;
+                                        color: #949AA8;
+                                    }
+                                    .end {
+                                        position: absolute;
+                                        right: 0;
+                                        bottom: -35px;
+                                        border: 0;
+                                        color: #949AA8;
+                                    }
+                                    .score th {
+                                        position: relative;
+                                    }
+                                    .progress {
+                                        padding : 10px 0px !important;
+                                    }
+                                    #progress {
+                                        appearance: none;
+                                        border:0;
+                                        width:100%;
+                                    }
+        
+                                    #progress::-webkit-progress-bar {
+                                        background: #f0f0f0;
+                                        border: 1px solid #eeeeee;
+                                        height: 28px;
+                                        overflow: hidden;
+                                    }
+        
+                                    #progress::-webkit-progress-value {
+                                        background: #f47b25;
+                                        height: 28px;
+                                    }
+                                    .grade-value{
+                                        color: #FFFFFF;
+                                        background-color:  #f47b25;
+                                        font-size: 20px;
+                                    }
+                                    .width-t{
+                                        width:28%
+                                    }
+                                    .width-h{
+                                        width:14.4%
+                                    }
+                                    .width-q{
+                                        width:7.2%
+                                    }
+                                </style>
+                            
+                            <table class="tg" style="width: 100%">
+        
+                                <thead>
+                                <tr>
+                                    <th class="tg-7btt background-grey grey-font width-t" rowspan="2">평가 기준</th>
+                                    <th class="tg-amwm background-red width-h" colspan="2">나쁨</th>
+                                    <th class="tg-amwm background-joo width-h" colspan="2">보통</th>
+                                    <th class="tg-amwm background-green width-h" colspan="2">양호</th>
+                                    <th class="tg-amwm background-blue width-h" colspan="2">좋음</th>
+                                    <th class="tg-amwm background-grey grey-font width-h" rowspan="3">등급</th>
+                                </tr>
+                                <tr class="score">
+                                    <th class="tg-baqh background-grey width-q">D&nbsp;<span class="start">60</span><span class="mid">65</span></th>
+                                    <th class="tg-baqh background-grey width-q">C&nbsp;<span class="mid">70</span></th>
+                                    <th class="tg-baqh background-grey width-q">B-<span class="mid">75</span></th>
+                                    <th class="tg-baqh background-grey width-q">B <span class="mid">80</span></th>
+                                    <th class="tg-baqh background-grey width-q">B+<span class="mid">85</span></th>
+                                    <th class="tg-baqh background-grey width-q">A-<span class="mid">90</span></th>
+                                    <th class="tg-baqh background-grey width-q">A <span class="mid">95</span></th>
+                                    <th class="tg-baqh background-grey width-q">A+<span class="end">100</span></th>
+                                </tr>
+                                <tr>
+                                    <th class="tg-amwm background-grey grey-font">점수 기준</th>
+                                    <th class="tg-baqh" colspan="8"></th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td class="tg-amwm grey-font">종합 건강 점수</td>
+                                    <td class="tg-baqh progress" colspan="8">
+                                        <progress class="progress" id="progress" value="46.000000000000014" min="0" max="100"></progress>
+                                    </td>
+                                    <td class="tg-amwm grade-value"> B0</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </score-chart>
+                    </div>
+                    <div class="commentary">
+                        <div class="comment-txt">
+                            <p id="accent">
+                                우리 기업의 인바디 종합 등급은 B0로 보통입니다.
+                            </p>
+                            인바디 종합 등급은 비만, 근육, 순환, 혈압의 네 가지 항목의 종합적인 평가를 통해 매겨집니다. 상세 항목별 평가를 확인하여 우리 기업은 어떤 항목에서 가장 많은 문제가 발견되었는지 파악하고 개선을 위한 다양한 챌린지를 진행해보세요. 각 항목별 문제 구성원을 줄이는 것이 다음 정기검사에서 더 좋은 등급을 받을 수 있는 방법입니다!
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <!-- </div>
+        <div class="component">         -->
+            <div class="title">세부 분석 결과</div>
+            
+            <div class="graph-sect" id="detail-analysis"><detail-analysis>
+                <style>
+                    .tb, .tb * {
+                        border-spacing:0;
+                        border: 2px solid #e2e4e9;
+                        border-collapse:collapse;
+                        text-align:center;
+                        font-weight:bold;
+                    }
+                    .tb-7btt * {
+                        border:0
+                    }
+                    .tb td
+                    {
+                        padding:10px 5px;
+                    }
+                    .tb .tb-c3ow{
+                        border-color:inherit;
+                        text-align:center;
+                    }
+                    .tb .tb-7btt{
+                        font-weight:bold;
+                        text-align:-webkit-center;
+                        color:#636875
+                    }
+                    .tb-7btt .img{
+                        width: 40px; margin:10px;
+                    }
+                    .tb-7btt .score{
+                        color: #636875;
+                        font-size:14px;
+                    }
+                    .tb-7btt .score span{
+                        color: var(--dcdfe-3-border-1); margin: 0px 10px
+                    }
+                </style>
+            
+            <div class="graph-box only">
+                <table class="tb">
+                    <thead>
+                        <tr>
+                        <th class="tb-7btt">체지방</th>
+                        <th class="tb-7btt">근육</th>
+                        <th class="tb-7btt">순환</th>
+                        <th class="tb-7btt">혈압</th>
+                        <th class="tb-7btt">체력</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                        <td class="tb-7btt">
+                            <img src="/_content/LBWeb.Corporate.Report/img/emoji_angry_red.svg" class="img">
+                            <div class="score">
+                                66.6점
+                                <span>|</span>
+                                나쁨
+                            </div>
+                        </td>
+                        <td class="tb-7btt">
+                            <img src="/_content/LBWeb.Corporate.Report/img/emoji_soso_yelllow.svg" class="img">
+                            <div class="score">
+                                74.0점
+                                <span>|</span>
+                                보통
+                            </div>
+                        </td>
+                        <td class="tb-7btt">
+                            <img src="/_content/LBWeb.Corporate.Report/img/emoji_good_green.svg" class="img">
+                            <div class="score">
+                                88.8점
+                                <span>|</span>
+                                양호
+                            </div>
+                        </td>
+                        <td class="tb-7btt"> <img src="/_content/LBWeb.Corporate.Report/img/emoji_good_green.svg" class="img">
+                            <div class="score">
+                                82.6점
+                                <span>|</span>
+                                양호
+                            </div>
+                        </td>
+                        <td class="tb-7btt">
+                            <img src="/_content/LBWeb.Corporate.Report/img/emoji_soso_yelllow.svg" class="img">
+                            <div class="score">
+                                79.9점
+                                <span>|</span>
+                                보통
+                            </div>
+                        </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="score-bar-graph-box graph-area-outside-wrapper">
+                    <div class="graph-area-inside-wrapper">
+                        <div class="score-bar-graph-wrapper">
+                            <score-bar-graph dir="R" len="450"><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" style="overflow:visible">
+                    <rect x="0" y="0" width="9" height="25" fill="#1e66d9" opacity="0.7"></rect>
+                    <rect x="0" y="25" width="9" height="25" fill="#47b998" opacity="0.7"></rect>
+                    <rect x="0" y="50" width="9" height="25" fill="#ef8100" opacity="0.7"></rect>
+                    <rect x="0" y="75" width="9" height="25" fill="#cc1f3b" opacity="0.7"></rect>
+                    <text x="12" y="5" font-size="5" fill="#718093">100</text>
+                    <text x="12" y="25" font-size="5" fill="#718093">90</text>
+                    <text x="12" y="50" font-size="5" fill="#718093">80</text>
+                    <text x="12" y="75" font-size="5" fill="#718093">70</text>
+                    <text x="12" y="97" font-size="5" fill="#718093">60</text>
+                    <line x1="0" y1="100" x2="450" y2="100" style="stroke:#888; stroke-width:0.3"></line>
+                </svg></score-bar-graph>
+                        </div>
+                        <div id="detail-diagram">
+                            <triangle-graph class="detail-analysis-graph" width="250" height="200" percent="66.6" bottomtext="true" txttype="2" txt="체지방">
+            <div class="graph-wrapper" style="width:250px; height:200px; position:relative; margin: 0 0 34px 0px;">
+                <svg width="100%" height="250px" style="overflow:visible">
+                    <g id="graph-score">
+                        <path class="leaf" fill="#cc1f3b" opacity="0.5" stroke="#000" stroke-width="0" d="M0,200,20.624999999999982, 167.00000000000003, 229.37500000000003, 167.00000000000003, 250, 200z"></path>
+                    </g>
+                        <line x1="0" y1="200" x2="125" y2="0" style="stroke:#e9ecf0; stroke-width:1"></line>
+                        <line x1="125" y1="0" x2="250" y2="200" style="stroke:#e9ecf0; stroke-width:1"></line>
+                        <line x1="250" y1="200" x2="0" y2="200" style="stroke:#e9ecf0; stroke-width:1"></line>
+                        <line x1="125" y1="200" x2="125" y2="207" style="stroke:#182031; stroke-width:1"></line>
+                    <line x1="12.5" y1="180" x2="237.5" y2="180" style="stroke:#e9ecf0; stroke-width:0.7"></line><line x1="25" y1="160" x2="225" y2="160" style="stroke:#e9ecf0; stroke-width:0.7"></line><line x1="37.5" y1="140" x2="212.5" y2="140" style="stroke:#e9ecf0; stroke-width:0.7"></line><line x1="50" y1="120" x2="200" y2="120" style="stroke:#e9ecf0; stroke-width:0.7"></line><line x1="62.5" y1="100" x2="187.5" y2="100" style="stroke:#e9ecf0; stroke-width:0.7"></line><line x1="75" y1="80" x2="175" y2="80" style="stroke:#e9ecf0; stroke-width:0.7"></line><line x1="87.5" y1="60" x2="162.5" y2="60" style="stroke:#e9ecf0; stroke-width:0.7"></line><line x1="100" y1="40" x2="150" y2="40" style="stroke:#e9ecf0; stroke-width:0.7"></line><line x1="112.5" y1="20" x2="137.5" y2="20" style="stroke:#e9ecf0; stroke-width:0.7"></line>
+                </svg>
+                <div style="position: absolute; bottom: -40px; left: 50%; transform: translateX(-50%); color: gray; text-align: center;"><span style="color: var(--182031-accent); font-weight: bold;">체지방</span>
+            </div>
+                </div></triangle-graph>
+                            <inverted-triangle-graph class="detail-analysis-graph" width="250" height="200" percent="74.0" toptext="true" istop="true" txttype="2" txt="근육">
+                <div class="graph-wrapper" style="width:250px; height:200px; left: 0px; position:relative;  margin: 0 0 34px 0px;">
+                <svg width="100%" height="100%" style="overflow:visible">
+                    <g id="graph-score">
+                        <path class="leaf" fill="#ef8100" opacity="0.5" stroke="#000" stroke-width="0" d="M125,200,81.25, 130, 168.75, 130, 125,200z"></path>
+                    </g>
+                    <line x1="0" y1="0" x2="125" y2="200" style="stroke:#e9ecf0; stroke-width:1"></line>
+                    <line x1="125" y1="200" x2="250" y2="0" style="stroke:#e9ecf0; stroke-width:1"></line>
+                    <line x1="250" y1="0" x2="0" y2="0" style="stroke:#e9ecf0; stroke-width:1"></line>
+                            <line x1="125" y1="0" x2="125" y2="-7" style="stroke:#182031; stroke-width:1"></line>
+                        <line x1="112.5" y1="180" x2="137.5" y2="180" style="stroke:#e9ecf0; stroke-width:0.7"></line><line x1="100" y1="160" x2="150" y2="160" style="stroke:#e9ecf0; stroke-width:0.7"></line><line x1="87.5" y1="140" x2="162.5" y2="140" style="stroke:#e9ecf0; stroke-width:0.7"></line><line x1="75" y1="120" x2="175" y2="120" style="stroke:#e9ecf0; stroke-width:0.7"></line><line x1="62.5" y1="100" x2="187.5" y2="100" style="stroke:#e9ecf0; stroke-width:0.7"></line><line x1="50" y1="80" x2="200" y2="80" style="stroke:#e9ecf0; stroke-width:0.7"></line><line x1="37.5" y1="60" x2="212.5" y2="60" style="stroke:#e9ecf0; stroke-width:0.7"></line><line x1="25" y1="40" x2="225" y2="40" style="stroke:#e9ecf0; stroke-width:0.7"></line><line x1="12.5" y1="20" x2="237.5" y2="20" style="stroke:#e9ecf0; stroke-width:0.7"></line>
+                </svg>
+                    <div style="position: absolute; top: -40px; left: 50%; transform: translateX(-50%); color: gray; text-align: center;"><span style="color: var(--182031-accent); font-weight: bold;">근육</span>
+            </div>
+        </div></inverted-triangle-graph>
+                            <parallelogram-graph class="detail-analysis-graph" id="circulation" width="250" height="200" percent="88.8" bottomtext="true" txttype="2" txt="순환">
+                <div class="graph-wrapper" style="width:250px; height:200px; left: 0px; position:relative;">
+                    <svg width="100%" height="250px" style="overflow:visible">
+                            <g id="graph-score">
+                        <path class="leaf" stroke="#000" fill="#47b998" opacity="0.5" stroke-width="0" d="M0,200,90, 56.00000000000001, 215, 56.00000000000001, 125,200z"></path>
+                        </g>
+                        <line x1="0" y1="200" x2="125" y2="0" style="stroke:#e9ecf0; stroke-width:1"></line>
+                        <line x1="125" y1="0" x2="250" y2="0" style="stroke:#e9ecf0; stroke-width:1"></line>
+                        <line x1="250" y1="0" x2="125" y2="200" style="stroke:#e9ecf0; stroke-width:1"></line>
+                        <line x1="125" y1="200" x2="0" y2="200" style="stroke:#e9ecf0; stroke-width:1"></line>
+                        <line x1="62.5" y1="200" x2="62.5" y2="207" style="stroke:#182031; stroke-width:1"></line>
+
+                            <line x1="12.5" y1="180" x2="137.5" y2="180" style="stroke:#e9ecf0; stroke-width:0.7"></line><line x1="25" y1="160" x2="150" y2="160" style="stroke:#e9ecf0; stroke-width:0.7"></line><line x1="37.5" y1="140" x2="162.5" y2="140" style="stroke:#e9ecf0; stroke-width:0.7"></line><line x1="50" y1="120" x2="175" y2="120" style="stroke:#e9ecf0; stroke-width:0.7"></line><line x1="62.5" y1="100" x2="187.5" y2="100" style="stroke:#e9ecf0; stroke-width:0.7"></line><line x1="75" y1="80" x2="200" y2="80" style="stroke:#e9ecf0; stroke-width:0.7"></line><line x1="87.5" y1="60" x2="212.5" y2="60" style="stroke:#e9ecf0; stroke-width:0.7"></line><line x1="100" y1="40" x2="225" y2="40" style="stroke:#e9ecf0; stroke-width:0.7"></line><line x1="112.5" y1="20" x2="237.5" y2="20" style="stroke:#e9ecf0; stroke-width:0.7"></line>
+                    </svg>
+                        <div style="position: absolute; bottom: -40px; left: 25%; transform: translateX(-50%); color: gray; text-align: center;"><span style="color: var(--182031-accent); font-weight: bold;">순환</span>
+                </div>
+                    </div></parallelogram-graph>
+                                <parallelogram-graph class="detail-analysis-graph" id="blood-pressure" width="250" height="200" percent="82.6" toptext="true" istop="true" txttype="2" txt="혈압">
+                <div class="graph-wrapper" style="width:250px; height:200px; left: 0px; position:relative;">
+                    <svg width="100%" height="250px" style="overflow:visible">
+                            <g id="graph-score">
+                        <path class="leaf" stroke="#000" fill="#47b998" opacity="0.5" stroke-width="0" d="M0,200,70.62499999999999, 87.00000000000003, 195.625, 87.00000000000003, 125,200z"></path>
+                        </g>
+                        <line x1="0" y1="200" x2="125" y2="0" style="stroke:#e9ecf0; stroke-width:1"></line>
+                        <line x1="125" y1="0" x2="250" y2="0" style="stroke:#e9ecf0; stroke-width:1"></line>
+                        <line x1="250" y1="0" x2="125" y2="200" style="stroke:#e9ecf0; stroke-width:1"></line>
+                        <line x1="125" y1="200" x2="0" y2="200" style="stroke:#e9ecf0; stroke-width:1"></line>
+                        <line x1="187.5" y1="0" x2="187.5" y2="-7" style="stroke:#182031; stroke-width:1"></line>
+
+                            <line x1="12.5" y1="180" x2="137.5" y2="180" style="stroke:#e9ecf0; stroke-width:0.7"></line><line x1="25" y1="160" x2="150" y2="160" style="stroke:#e9ecf0; stroke-width:0.7"></line><line x1="37.5" y1="140" x2="162.5" y2="140" style="stroke:#e9ecf0; stroke-width:0.7"></line><line x1="50" y1="120" x2="175" y2="120" style="stroke:#e9ecf0; stroke-width:0.7"></line><line x1="62.5" y1="100" x2="187.5" y2="100" style="stroke:#e9ecf0; stroke-width:0.7"></line><line x1="75" y1="80" x2="200" y2="80" style="stroke:#e9ecf0; stroke-width:0.7"></line><line x1="87.5" y1="60" x2="212.5" y2="60" style="stroke:#e9ecf0; stroke-width:0.7"></line><line x1="100" y1="40" x2="225" y2="40" style="stroke:#e9ecf0; stroke-width:0.7"></line><line x1="112.5" y1="20" x2="237.5" y2="20" style="stroke:#e9ecf0; stroke-width:0.7"></line>
+                    </svg>
+                        <div style="position: absolute; top: -40px; left: 75%; transform: translateX(-50%); color: gray; text-align: center;"><span style="color: var(--182031-accent); font-weight: bold;">혈압</span>
+                </div>
+                    </div></parallelogram-graph>
+                            <parallelogram-graph class="detail-analysis-graph" id="health" width="250" height="200" percent="79.9" bottomtext="true" txttype="2" txt="체력" style=" left: 675px;">
+                <div class="graph-wrapper" style="width:250px; height:200px; left: 0px; position:relative;">
+                    <svg width="100%" height="250px" style="overflow:visible">
+                            <g id="graph-score">
+                        <path class="leaf" stroke="#000" fill="#ef8100" opacity="0.5" stroke-width="0" d="M0,200,62.18750000000002, 100.49999999999997, 187.1875, 100.49999999999997, 125,200z"></path>
+                        </g>
+                        <line x1="0" y1="200" x2="125" y2="0" style="stroke:#e9ecf0; stroke-width:1"></line>
+                        <line x1="125" y1="0" x2="250" y2="0" style="stroke:#e9ecf0; stroke-width:1"></line>
+                        <line x1="250" y1="0" x2="125" y2="200" style="stroke:#e9ecf0; stroke-width:1"></line>
+                        <line x1="125" y1="200" x2="0" y2="200" style="stroke:#e9ecf0; stroke-width:1"></line>
+                        <line x1="62.5" y1="200" x2="62.5" y2="207" style="stroke:#182031; stroke-width:1"></line>
+
+                            <line x1="12.5" y1="180" x2="137.5" y2="180" style="stroke:#e9ecf0; stroke-width:0.7"></line><line x1="25" y1="160" x2="150" y2="160" style="stroke:#e9ecf0; stroke-width:0.7"></line><line x1="37.5" y1="140" x2="162.5" y2="140" style="stroke:#e9ecf0; stroke-width:0.7"></line><line x1="50" y1="120" x2="175" y2="120" style="stroke:#e9ecf0; stroke-width:0.7"></line><line x1="62.5" y1="100" x2="187.5" y2="100" style="stroke:#e9ecf0; stroke-width:0.7"></line><line x1="75" y1="80" x2="200" y2="80" style="stroke:#e9ecf0; stroke-width:0.7"></line><line x1="87.5" y1="60" x2="212.5" y2="60" style="stroke:#e9ecf0; stroke-width:0.7"></line><line x1="100" y1="40" x2="225" y2="40" style="stroke:#e9ecf0; stroke-width:0.7"></line><line x1="112.5" y1="20" x2="237.5" y2="20" style="stroke:#e9ecf0; stroke-width:0.7"></line>
+                    </svg>
+                        <div style="position: absolute; bottom: -40px; left: 25%; transform: translateX(-50%); color: gray; text-align: center;"><span style="color: var(--182031-accent); font-weight: bold;">체력</span>
+                </div>
+                    </div></parallelogram-graph>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </detail-analysis></div>
+        </div>    
+        <div class="component">        
+            <div class="title">인바디 나이</div>
+            <div class="graph-sect" style="margin:0 0 16px 0;">
+                <div class="graph-box">
+                    <div class="title">검사 참여자 인바디 나이</div>
+                    <div style="width:500px; margin: 46px auto 34px; text-align: center; position: relative;">
+                        <age-graph age="31.7" inbodyage="32.4"><svg viewBox="0 0 150 60" xmlns="http://www.w3.org/2000/svg" style="overflow: visible;">
+                    <g class="x axis" stroke="#e9ecf0" stroke-width="0.1">
+                        <line x1="0" y1="0" x2="150" y2="0" style="stroke-width:0.4"></line>
+                        <line x1="0" y1="25" x2="150" y2="25" style="stroke-width:0.4"></line>
+                        <line x1="0" y1="50" x2="150" y2="50" style="stroke-width:0.4"></line>
+                    </g>
+                    <rect x="35" y="1.0802469135802468" width="24" height="48.91975308641975" fill="#b3bbc5" opacity="0.7" rx="2" ry="2"></rect>
+                    <rect x="85" y="0" width="24" height="50" fill="#cc1f3b" opacity="0.7" rx="2" ry="2"></rect>
+                    <line x1="0" y1="1.0802469135802468" x2="150" y2="1.0802469135802468" stroke="#3d4861" stroke-dasharray="2, 1" style="stroke-width:0.5"></line>
+                    <text x="47" y="57" text-anchor="middle" font-size="5" fill="#718093" font-weight="bold">실제 평균 나이</text>
+                    <text x="97" y="57" text-anchor="middle" font-size="5" fill="#182031" font-weight="bold">인바디 평균 나이</text>
+                    <text x="47" y="-5.919753086419753" text-anchor="middle" font-size="5.5" fill="#718093" font-weight="bold">31.7</text>
+                    <text x="97" y="-7" text-anchor="middle" font-size="5.5" fill="#182031" font-weight="bold">32.4</text>
+                </svg></age-graph>
+                    </div>
+                </div>
+            </div>
+            <div class="graph-sect">
+                <div class="graph-box description">
+                    <div class="comment-memo">
+                        <div class="contents" style="color: var(--182031-accent);">
+                            <div class="lb-disp-flx">
+                                <img src="/_content/LBWeb.InBody.DesignSystem/icon/ic-filled-info-20-n.svg" class="d-gy">
+                                <h3>인바디 나이</h3>
+                            </div>
+                            <p>
+인바디 나이는 인바디에서 독자적으로 개발한 체성분을 기준으로 산정하는 나이입니다. 골격근량이 많고, 체지방량이 적을수록 나이가 어려집니다.<br>
+인바디에서 보유중인 빅데이터의 통계적 특성을 반영하여, 실제 나이를 기준으로 각종 체성분 값을 활용해 계산하는 지표로, 계산된 인바디 나이가 절대적인 값을 의미하지는 않으며 실제나이와의 상대적인 비교를 중심으로 해석해 주시길 바랍니다.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    // var div = document.createElement('div');
+    // div.style.width = '1in'; // CSS에서 1인치를 설정
+    // div.style.height = '1in';
+    // div.style.position = 'absolute';
+    // div.style.left = '-100%'; // 화면에 표시되지 않도록 설정
+    // document.body.appendChild(div); // 생성한 div를 문서에 추가
+    // var dpi = div.offsetWidth;
+    // document.body.removeChild(div);
+    
+    // const pageHeight = 11 * dpi;  //letter의 세로 크기는 11인치
+
+
+    // document.addEventListener("DOMContentLoaded", function() {
+    //     const components = document.querySelectorAll('.component');
+    //     //const pageHeight = 1122; // PDF 페이지 높이, 예: Letter size 11인치, DPI 102, 11*102 = 1122px
+
+    //     let accumulatedHeight = 0;
+
+    //     components.forEach((component, index) => {
+    //         const componentHeight = component.offsetHeight;
+
+    //         // 현재 컴포넌트를 추가했을 때 페이지 높이를 초과하는지 검사
+    //         if (accumulatedHeight + componentHeight > pageHeight) {
+    //             // 페이지 높이를 초과하면 이전 컴포넌트에 페이지 브레이크를 적용
+    //             if(index >= 1){
+    //                 components[index - 1].style.pageBreakAfter = "always";
+    //                 components[index - 1].style.breakAfter = "page";
+    //             }
+    //             accumulatedHeight = componentHeight; // 누적 높이 초기화
+    //         } else {
+    //             accumulatedHeight += componentHeight;
+    //         }
+    //     });
+    // });
+</script>
+</html>

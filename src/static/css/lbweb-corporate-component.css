@@ -1,0 +1,74 @@
+﻿lb-pagination {
+    display: block;
+    text-align: center;
+}
+
+lb-pagination ul {
+    padding: 0;
+    margin: 0 12px;
+}
+
+lb-pagination li {
+    list-style: none;
+}
+
+lb-pagination button {
+    /*padding: 6.5px 11.5px;*/
+    width: 32px;
+    height: 32px;
+    padding: 3px 12px 5px;
+    background: white;
+    border: solid 1px var(--dcdfe-3-border-1);
+    border-radius: 8px;
+    color: var(--182031-accent);
+    font-size: var(--font-size-popup-contents);
+}
+
+    lb-pagination button:hover {
+        background-color: var(--f-0-f-2-f-5-background-1);
+    }
+
+lb-pagination button:focus {
+    outline: none;
+}
+
+lb-pagination li > button {
+    background-color: transparent;
+    border: 0;
+}
+
+lb-pagination li > button.active {
+    color: var(--cc-1-f-3-b-primary);
+    font-weight: bold;
+}
+
+lb-pagination .page {
+    display: inline-flex;
+}
+
+lb-pagination .lb-pagination {
+    display: flex;
+    align-items: center;
+}
+
+    lb-pagination #prev,
+    lb-pagination #next {
+        width: 32px;
+        height: 32px;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+        lb-pagination #prev span,
+        lb-pagination #next span {
+            margin: 0;
+        }
+
+input[type="checkbox"].filter-check {
+    width: 20px;
+    height: 20px;
+    min-width: 20px;
+   
+}

@@ -1,0 +1,444 @@
+﻿.lb-tab-navigation {
+    justify-content: space-between;
+}
+
+#report-wrapper .graph-box {
+    height: 100%;
+}
+    #report-wrapper .graph-box .graph-box {
+        border: 0;
+        box-shadow: none;
+    }
+/*종합분석*/
+
+.graph_title {
+    position: absolute;
+    z-index: 1;
+    bottom: -12px;
+    display: inline-block;
+    height: 20px;
+    line-height: 20px;
+    font-size: 14px;
+    font-weight: normal;
+    transform: translate(-20%, 100%);
+    text-align: center;
+}
+
+.trend-graph-area ul.graph_bg .graph-title {
+    position: relative;
+    bottom: unset;
+    top: 300px;
+    height: unset;
+    line-height: unset;
+}
+
+.trend-graph-area ul.graph_bg li:nth-child(2) .graph_title,
+.trend-graph-area ul.graph_bg li:last-child .graph_title {
+    max-width: 24vw;
+    min-width: 15vw;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    /*white-space: normal;
+    word-wrap: break-word;
+    word-break: keep-all;*/
+}
+
+.trend-graph-area ul.graph_bg li:nth-child(2) .graph_title {
+    left: -6.5vw;
+}
+
+    .trend-graph-area ul.graph_bg li:nth-child(2) .graph_title.over {
+        text-align: left;
+        left: 2.5vw
+    }
+
+.trend-graph-area ul.graph_bg li:last-child .graph_title {
+    left: -4.5vw;
+}
+    .trend-graph-area ul.graph_bg li:last-child .graph_title.over {
+        text-align: right;
+        left: -11vw;
+    }
+
+
+#detail-analysis.graph-sect .score-bar-graph-box {
+    position: absolute;
+    display: flex;
+}
+
+#detail-analysis.graph-sect .score-bar-graph-wrapper {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 75px;
+}
+
+#detail-analysis.graph-sect .detail-analysis-graph,
+#detail-analysis.graph-sect .score-bar-graph-wrapper {
+    position: absolute;
+    top: 30px;
+}
+
+#detail-analysis.graph-sect .graph-area-outside-wrapper .graph-area-inside-wrapper #detail-diagram {
+    width: 100%;
+}
+
+.graph-box:has(#detail-analysis) .title {
+    margin-bottom: 0;
+}
+
+#detail-analysis.graph-sect .graph-box {
+    height: auto;
+}
+
+#detail-analysis.graph-sect triangle-graph {
+    /*7*/
+    left: 175px;
+}
+
+#detail-analysis.graph-sect inverted-triangle-graph {
+    /*12*/
+    left: 300px;
+}
+
+#detail-analysis.graph-sect parallelogram-graph#circulation {
+    /*17*/
+    left: 425px;
+}
+
+#detail-analysis.graph-sect parallelogram-graph#blood-pressure {
+    /*22*/
+    left: 550px;
+}
+
+#detail-analysis.graph-sect .detail-analysis-graph .graph-wrapper {
+    width: 240px;
+    height: 160px;
+    position: relative;
+}
+
+#detail-analysis.graph-sect .graph-box .graph-area-outside-wrapper {
+    position: relative;
+    overflow-y: hidden;
+}
+
+#detail-analysis.graph-sect .graph-box .graph-area-inside-wrapper {
+    position: relative;
+    top: 30px;
+}
+
+
+/*@media screen and (max-width: 1199px) {
+    #detail-analysis.graph-sect triangle-graph {*/
+/*7*/
+/*left: 175px;*/
+/*left: 125px;
+    }
+
+    #detail-analysis.graph-sect inverted-triangle-graph {*/
+/*12*/
+/*left: 300px;*/
+/*left: 250px;
+    }
+
+    #detail-analysis.graph-sect parallelogram-graph#circulation {*/
+/*17*/
+/*left: 425px;*/
+/*left: 375px;
+    }
+
+    #detail-analysis.graph-sect parallelogram-graph#blood-pressure {*/
+/*22*/
+/*left: 550px;*/
+/*left: 500px;
+    }
+
+    #detail-analysis.graph-sect .score-bar-graph-wrapper {
+        left: 25px;
+    }
+}*/
+
+
+.score-bar-graph-sect {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 0;
+    right: 120px;
+}
+
+/*********** 체지방 ***********/
+.analysis-graph .graph-wrapper {
+    width: 100%;
+    height: 208px;
+    margin: 0 0 34px 0;
+    text-align: -webkit-center;
+    position: relative;
+}
+
+.graph-box .percent-sect {
+    text-align: left;
+    min-width: 30%;
+}
+.graph-box .percent-sect * {
+    color: #636875 !important;
+}
+.graph-box .percent-sect .percent {
+    font-size: 24px;
+    font-weight: bold;
+}
+/*비만 구성원 수 그래프 영역*/
+.graph-box .mbr-cnt-graph {
+    width: 100%;
+    margin: 0 0 40px 0;
+    text-align: center;
+    align-items: flex-start;
+}
+
+    .graph-box .mbr-cnt-graph .doughnut-area,
+    .graph-box .mbr-cnt-graph .bar-graph-sect {
+        height: 250px;
+    }
+
+    /*비만 도넛 그래프*/
+    .graph-box .mbr-cnt-graph .doughnut-area {
+        width: 300px;
+        position: relative;
+    }
+
+        .graph-box .mbr-cnt-graph .doughnut-area > doughnut-graph {
+            position: absolute;
+            left: 0;
+            top: -25px;
+        }
+
+    /*비만 막대 그래프*/
+    .graph-box .mbr-cnt-graph .bar-graph-sect standard-bar-graph {
+        position: absolute;
+        margin-top: 25px;
+    }
+
+        .graph-box .mbr-cnt-graph .bar-graph-sect standard-bar-graph[name="male"] {
+            left: calc(165 / 1136 * 100%);
+        }
+
+        .graph-box .mbr-cnt-graph .bar-graph-sect standard-bar-graph[name="female"] {
+            left: calc((165 + 48 + 80) / 1136 * 100%);
+        }
+
+        .graph-box .mbr-cnt-graph .bar-graph-sect standard-bar-graph[name="age-20"] {
+            left: calc((165 + 48 * 2 + 40 + 200) / 1136 * 100%);
+        }
+
+        .graph-box .mbr-cnt-graph .bar-graph-sect standard-bar-graph[name="age-30"] {
+            left: calc((165 + 48 * 3 + 40 * 2 + 240) / 1136 * 100%);
+        }
+
+        .graph-box .mbr-cnt-graph .bar-graph-sect standard-bar-graph[name="age-40"] {
+            left: calc((165 + 48 * 4 + 40 * 3 + 280) / 1136 * 100%);
+        }
+
+        .graph-box .mbr-cnt-graph .bar-graph-sect standard-bar-graph[name="age-50"] {
+            left: calc((165 + 48 * 5 + 40 * 4 + 320) / 1136 * 100%);
+        }
+
+    /*비만 막대 그래프*/
+    .graph-box .mbr-cnt-graph .bar-graph-sect standard-bar-graph2 {
+        position: absolute;
+        margin-top: 25px;
+    }
+
+        .graph-box .mbr-cnt-graph .bar-graph-sect standard-bar-graph2[name="male"] {
+            left: calc(165 / 1136 * 100%);
+        }
+
+        .graph-box .mbr-cnt-graph .bar-graph-sect standard-bar-graph2[name="female"] {
+            left: calc((165 + 48 + 80) / 1136 * 100%);
+        }
+
+        .graph-box .mbr-cnt-graph .bar-graph-sect standard-bar-graph2[name="age-20"] {
+            left: calc((165 + 48 * 2 + 40 + 200) / 1136 * 100%);
+        }
+
+        .graph-box .mbr-cnt-graph .bar-graph-sect standard-bar-graph2[name="age-30"] {
+            left: calc((165 + 48 * 3 + 40 * 2 + 240) / 1136 * 100%);
+        }
+
+        .graph-box .mbr-cnt-graph .bar-graph-sect standard-bar-graph2[name="age-40"] {
+            left: calc((165 + 48 * 4 + 40 * 3 + 280) / 1136 * 100%);
+        }
+
+        .graph-box .mbr-cnt-graph .bar-graph-sect standard-bar-graph2[name="age-50"] {
+            left: calc((165 + 48 * 5 + 40 * 4 + 320) / 1136 * 100%);
+        }
+
+/*********** 복부비만 ***********/
+.graph-box .double-doughnut-wrapper {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    margin-bottom: 40px;
+}
+
+    .graph-box .double-doughnut-wrapper .graph-detail {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    
+
+/*********** 근육 ***********/
+.graph-sect.multi-doughnut-warpper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+    .graph-sect.multi-doughnut-warpper .comment-memo {
+        height: max-content;
+    }
+
+    .graph-sect.multi-doughnut-warpper .graph-box {
+        min-width: 560px !important;
+        flex: 1;
+    }
+
+/*********** 혈압 ***********/
+.graph-sect .graph-box .scatter-graph {
+    overflow-y: hidden;
+    overflow-x: scroll;
+    padding-right: 25px;
+}
+
+
+/*********** 체력 ***********/
+.graph-sect .graph-box.single-doughnut {
+    height: 320px !important;
+}
+
+    .graph-sect .graph-box.single-doughnut .double-doughnut-wrapper,
+    .graph-sect .graph-box.single-doughnut .doughnut-sect {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+#report-wrapper:not(:has(#report-index-page)).graph-sect .graph-box.single-doughnut .doughnut-sect > div {
+    margin-left: 100px;
+    margin-right: 20px;
+}
+
+.cnt-wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    width: max-content;
+    align-items: flex-end;
+    margin-bottom: 8px;
+}
+
+
+@media screen and (max-width: 1199px) {
+    .analysis-graph .graph-wrapper {
+        width: 100%;
+        height: 208px;
+        margin: 0 0 34px 0;
+        text-align: -webkit-center;
+        position: relative;
+    }
+
+    .graph-box .mbr-cnt-graph {
+        flex-direction: column;
+    }
+
+        .graph-box .mbr-cnt-graph .bar-graph-sect standard-bar-graph {
+            margin-top: 10px;
+        }
+
+            .graph-box .mbr-cnt-graph .bar-graph-sect standard-bar-graph[name="male"] {
+                left: calc((52 / 560) * 100%);
+            }
+
+            .graph-box .mbr-cnt-graph .bar-graph-sect standard-bar-graph[name="female"] {
+                left: calc((52 + 40 + 32) / 560 * 100%);
+            }
+
+            .graph-box .mbr-cnt-graph .bar-graph-sect standard-bar-graph[name="age-20"] {
+                left: calc((52 + 40 * 2 + 32 + 88) / 560 * 100%);
+            }
+
+            .graph-box .mbr-cnt-graph .bar-graph-sect standard-bar-graph[name="age-30"] {
+                left: calc((52 + 40 * 3 + 32 * 2 + 88) / 560 * 100%);
+            }
+
+            .graph-box .mbr-cnt-graph .bar-graph-sect standard-bar-graph[name="age-40"] {
+                left: calc((52 + 40 * 4 + 32 * 3 + 88) / 560 * 100%);
+            }
+
+            .graph-box .mbr-cnt-graph .bar-graph-sect standard-bar-graph[name="age-50"] {
+                left: calc((52 + 40 * 5 + 32 * 4 + 88) / 560 * 100%);
+            }
+
+
+        .graph-box .mbr-cnt-graph .doughnut-area {
+            width: 100%;
+        }
+
+            .graph-box .mbr-cnt-graph .doughnut-area > doughnut-graph {
+                top: -80px;
+                left: 27%;
+            }
+
+
+    .graph-box .double-doughnut-wrapper {
+        margin-bottom: 20px;
+    }
+
+        .graph-box .double-doughnut-wrapper .graph-detail {
+            margin-top: 20px !important;
+        }
+
+        .graph-box .double-doughnut-wrapper .percent-sect {
+            margin-right: 0;
+        }
+
+        .graph-box .double-doughnut-wrapper .doughnut-sect {
+            flex-direction: column;
+            margin-top: 20px;
+        }
+
+    .graph-sect.multi-doughnut-warpper {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+        .graph-sect.multi-doughnut-warpper .graph-box {
+            min-width: unset;
+        }
+
+    .graph-sect .graph-box.single-doughnut .doughnut-sect .graph-detail {
+        margin: 0;
+    }
+
+    .graph-sect .graph-box.single-doughnut .doughnut-sect > div {
+        margin-left: 80px;
+        margin-right: 0;
+    }
+    .graph-sect .graph-box.single-doughnut .doughnut-sect {
+        gap: 0px !important;
+    }
+
+    .score-bar-graph-sect {
+        left: 500px;
+    }
+
+    .detail-analysis-graph > div {
+        left: 50px !important;
+    }
+
+    .detail-analysis-graph.no-tri > div {
+        left: 120px !important;
+    }
+}
+
+.bottom-area {
+    height: 50px;
+}

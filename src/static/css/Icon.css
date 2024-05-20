@@ -1,0 +1,1798 @@
+﻿/*.ico-step1 {
+    width: 28px;
+    height: 28px;
+    background: url(../ico/ico_step1.svg)no-repeat
+}
+
+.ico-step2 {
+    width: 28px;
+    height: 28px;
+    background: url(../ico/ico_step2.svg)no-repeat
+}
+
+.ico-step3 {
+    width: 28px;
+    height: 28px;
+    background: url(../ico/ico_step3.svg)no-repeat
+}
+
+.ico-step4 {
+    width: 28px;
+    height: 28px;
+    background: url(../ico/ico_step4.svg)no-repeat
+}
+
+.ico-step5 {
+    width: 28px;
+    height: 28px;
+    background: url(../ico/ico_step5.svg)no-repeat
+}
+
+.ico-stepP {
+    width: 28px;
+    height: 28px;
+    background: url(../ico/ico_stepP.svg)no-repeat
+}
+
+.ico-stepN {
+    width: 28px;
+    height: 28px;
+    background: url(../ico/ico_stepN.svg)no-repeat
+}*/
+/****************************************************************************************************************/
+
+.p-rd {
+    filter: invert(77%) sepia(46%) saturate(4539%) hue-rotate(335deg) brightness(82%) contrast(98%);
+}
+
+.p-gn {
+    filter: invert(45%) sepia(43%) saturate(510%) hue-rotate(112deg) brightness(105%) contrast(90%)
+}
+
+.p-og {
+    filter: invert(51%) sepia(89%) saturate(2552%) hue-rotate(14deg) brightness(106%) contrast(106%);
+}
+
+.a-bk {
+    filter: invert(96%) sepia(49%) saturate(1176%) hue-rotate(183deg) brightness(110%) contrast(91%);
+}
+
+.t-nv {
+    filter: invert(69%) sepia(12%) saturate(1473%) hue-rotate(184deg) brightness(85%) contrast(85%);
+}
+
+.c-gy {
+    filter: invert(51%) sepia(11%) saturate(672%) hue-rotate(174deg) brightness(94%) contrast(87%);
+}
+
+.d-gy {
+    filter: invert(31%) sepia(9%) saturate(270%) hue-rotate(174deg) brightness(104%) contrast(96%);
+}
+
+.p-bl {
+    filter: invert(48%) sepia(81%) saturate(6543%) hue-rotate(209deg) brightness(92%) contrast(83%);
+}
+
+
+/****************************************************************************************************************/
+/*** Size Transform *********************************************************************************************/
+/****************************************************************************************************************/
+.ico40 {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    -webkit-transform: scale(1, 1);
+}
+
+.ico38 {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    transform: scale(0.95, 0.95);
+    -ms-transform: scale(0.95, 0.95);
+    -webkit-transform: scale(0.95, 0.95);
+}
+
+.ico36 {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    transform: scale(0.9, 0.9);
+    -ms-transform: scale(0.9, 0.9);
+    -webkit-transform: scale(0.9, 0.9);
+}
+
+.ico34 {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    transform: scale(0.85, 0.85);
+    -ms-transform: scale(0.85, 0.85);
+    -webkit-transform: scale(0.85, 0.85);
+}
+
+.ico32 {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    transform: scale(0.8, 0.8);
+    -ms-transform: scale(0.8, 0.8);
+    -webkit-transform: scale(0.8, 0.8);
+}
+
+.ico30 {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    transform: scale(0.75, 0.75);
+    -ms-transform: scale(0.75, 0.75);
+    -webkit-transform: scale(0.75, 0.75);
+}
+
+.ico28 {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    transform: scale(0.7, 0.7);
+    -ms-transform: scale(0.7, 0.7);
+    -webkit-transform: scale(0.7, 0.7);
+}
+
+.ico26 {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    transform: scale(0.65, 0.65);
+    -ms-transform: scale(0.65, 0.65);
+    -webkit-transform: scale(0.65, 0.65);
+}
+
+.ico24 {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    transform: scale(0.6, 0.6);
+    -ms-transform: scale(0.6, 0.6);
+    -webkit-transform: scale(0.6, 0.6);
+}
+
+.ico22 {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    transform: scale(0.55, 0.55);
+    -ms-transform: scale(0.55, 0.55);
+    -webkit-transform: scale(0.55, 0.55);
+}
+
+.ico20 {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    transform: scale(0.5, 0.5);
+    -ms-transform: scale(0.5, 0.5);
+    -webkit-transform: scale(0.5, 0.5);
+}
+
+.ico18 {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    transform: scale(0.45, 0.45);
+    -ms-transform: scale(0.45, 0.45);
+    -webkit-transform: scale(0.45, 0.45);
+}
+
+.ico16 {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    transform: scale(0.4, 0.4);
+    -ms-transform: scale(0.4, 0.4);
+    -webkit-transform: scale(0.4, 0.4);
+}
+
+.ico14 {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    transform: scale(0.35, 0.35);
+    -ms-transform: scale(0.35, 0.35);
+    -webkit-transform: scale(0.35, 0.35);
+}
+
+
+.ico12 {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    transform: scale(0.3, 0.3);
+    -ms-transform: scale(0.3, 0.3);
+    -webkit-transform: scale(0.3, 0.3);
+}
+
+/****************************************************************************************************************/
+/** UI Actions **************************************************************************************************/
+
+.ico-search {
+    width: 40px;
+    height: 40px;
+    background: url(../ico/LBIcon.png) -196px -592px no-repeat
+}
+
+.ico-search-fill {
+    width: 33px;
+    height: 34px;
+    background: url(../ico/LBIcon.png) -200px -674px no-repeat;
+}
+
+.ico-zoomin {
+    width: 40px;
+    height: 40px;
+    background: url(../ico/LBIcon.png) -340px -591px no-repeat;
+}
+
+.ico-zoomin-fill {
+    width: 36px;
+    height: 36px;
+    background: url(../ico/LBIcon.png) -342px -672px no-repeat;
+}
+
+.ico-zoomout {
+    width: 40px;
+    height: 40px;
+    background: url(../ico/LBIcon.png) -484px -591px no-repeat;
+}
+
+.ico-zoomout-fill {
+    width: 36px;
+    height: 36px;
+    background: url(../ico/LBIcon.png) -486px -672px no-repeat;
+}
+
+.ico-home {
+    width: 39px;
+    height: 40px;
+    background: url(../ico/LBIcon.png) -628px -590px no-repeat;
+}
+
+.ico-home-fill {
+    width: 35px;
+    height: 36px;
+    background: url(../ico/LBIcon.png) -631px -672px no-repeat;
+}
+
+.ico-delete {
+    width: 34px;
+    height: 40px;
+    background: url(../ico/LBIcon.png) -775px -590px no-repeat;
+}
+
+.ico-delete-fill {
+    width: 29px;
+    height: 37px;
+    background: url(../ico/LBIcon.png) -777px -672px no-repeat;
+}
+
+.ico-edit {
+    width: 40px;
+    height: 39px;
+    background: url(../ico/LBIcon.png) -916px -591px no-repeat;
+}
+
+.ico-edit-fill {
+    width: 35px;
+    height: 36px;
+    background: url(../ico/LBIcon.png) -918px -673px no-repeat;
+}
+
+.ico-setting {
+    width: 40px;
+    height: 40px;
+    background: url(../ico/LBIcon.png) -1060px -590px no-repeat;
+}
+
+.ico-setting-fill {
+    width: 40px;
+    height: 40px;
+    background: url(../ico/LBIcon.png) -1060px -670px no-repeat;
+}
+
+.ico-favorite {
+    width: 40px;
+    height: 40px;
+    background: url(../ico/LBIcon.png) -1204.5px -590px no-repeat;
+}
+
+.ico-favorite-fill {
+    width: 35px;
+    height: 33px;
+    background: url(../ico/LBIcon.png) -1207px -674px no-repeat;
+}
+
+.ico-medical {
+    width: 40px;
+    height: 40px;
+    background: url(../ico/LBIcon.png) -1348px -591px no-repeat;
+}
+
+.ico-medical-fill {
+    width: 40px;
+    height: 40px;
+    background: url(../ico/LBIcon.png) -1348px -670px no-repeat;
+}
+
+.ico-bookmark {
+    width: 41px;
+    height: 41px;
+    background: url(../ico/LBIcon.png) -1491px -591px no-repeat;
+}
+
+.ico-bookmark-fill {
+    width: 41px;
+    height: 41px;
+    background: url(../ico/LBIcon.png) -1491px -671px no-repeat;
+}
+
+.ico-tag {
+    width: 40px;
+    height: 40px;
+    background: url(../ico/LBIcon.png) -1636px -590px no-repeat;
+}
+
+.ico-tag-fill {
+    width: 39px;
+    height: 39px;
+    background: url(../ico/LBIcon.png) -1637px -671px no-repeat;
+}
+
+
+.ico-global {
+    width: 41px;
+    height: 40px;
+    background: url(../ico/LBIcon.png) -1779px -590px no-repeat;
+}
+
+.ico-global-fill {
+    width: 40px;
+    height: 40px;
+    background: url(../ico/LBIcon.png) -1779px -670px no-repeat;
+}
+
+.ico-info {
+    width: 44px;
+    height: 42px;
+    background: url(../ico/LBIcon.png) -194px -893px no-repeat;
+}
+
+.ico-info-fill {
+    width: 40px;
+    height: 39px;
+    background: url(../ico/LBIcon.png) -196px -975px no-repeat;
+}
+
+.ico-help {
+    width: 44px;
+    height: 44px;
+    background: url(../ico/LBIcon.png) -338px -893px no-repeat;
+}
+
+.ico-help-fill {
+    width: 42px;
+    height: 40px;
+    background: url(../ico/LBIcon.png) -339px -973px no-repeat;
+}
+
+.ico-warn {
+    width: 43px;
+    height: 41px;
+    background: url(../ico/LBIcon.png) -482px -893px no-repeat;
+}
+
+.ico-warn-fill {
+    width: 39px;
+    height: 36px;
+    background: url(../ico/LBIcon.png) -484px -976px no-repeat;
+}
+
+.ico-err {
+    width: 44px;
+    height: 44px;
+    background: url(../ico/LBIcon.png) -626px -892px no-repeat;
+}
+
+.ico-err-fill {
+    width: 42px;
+    height: 42px;
+    background: url(../ico/LBIcon.png) -627px -973px no-repeat;
+}
+
+.ico-visible-line {
+    width: 44px;
+    height: 31px;
+    background: url(../ico/LBIcon.png) -770px -899px no-repeat;
+}
+
+.ico-visible-fill {
+    width: 40px;
+    height: 29px;
+    background: url(../ico/LBIcon.png) -772px -980px no-repeat;
+}
+
+.ico-unvisible-line {
+    width: 40px;
+    height: 39px;
+    background: url(../ico/LBIcon.png) -916px -896px no-repeat;
+}
+
+.ico-unvisible-fill {
+    width: 38px;
+    height: 33px;
+    background: url(../ico/LBIcon.png) -917px -978px no-repeat;
+}
+
+.ico-dispset {
+    width: 42px;
+    height: 40px;
+    background: url(../ico/LBIcon.png) -1057px -894px no-repeat;
+}
+
+.ico-dispset-fill {
+    width: 40px;
+    height: 40px;
+    background: url(../ico/LBIcon.png) -1059px -974px no-repeat;
+}
+
+.ico-location {
+    width: 37px;
+    height: 44px;
+    background: url(../ico/LBIcon.png) -1205px -892px no-repeat;
+}
+
+.ico-location-fill {
+    width: 33px;
+    height: 38px;
+    background: url(../ico/LBIcon.png) -1207px -975px no-repeat;
+}
+
+.ico-camera {
+    width: 44px;
+    height: 35px;
+    background: url(../ico/LBIcon.png) -1346px -897px no-repeat;
+}
+
+.ico-camera-fill {
+    width: 41px;
+    height: 34px;
+    background: url(../ico/LBIcon.png) -1348px -978px no-repeat;
+}
+
+.ico-image {
+    width: 43px;
+    height: 37px;
+    background: url(../ico/LBIcon.png) -1490px -896px no-repeat;
+}
+
+.ico-image-fill {
+    width: 39px;
+    height: 34px;
+    background: url(../ico/LBIcon.png) -1492px -978px no-repeat;
+}
+
+.ico-share {
+    width: 40px;
+    height: 45px;
+    background: url(../ico/LBIcon.png) -1636px -892px no-repeat;
+}
+
+.ico-share-fill {
+    width: 41px;
+    height: 43px;
+    background: url(../ico/LBIcon.png) -1636px -973px no-repeat;
+}
+
+.ico-bluetooth {
+    width: 32px;
+    height: 39px;
+    background: url(../ico/LBIcon.png) -1785px -894px no-repeat;
+}
+
+.ico-add-circle {
+    width: 44px;
+    height: 44px;
+    background: url(../ico/LBIcon.png) -194px -1196px no-repeat;
+}
+
+.ico-add-circle-fill {
+    width: 39px;
+    height: 39px;
+    background: url(../ico/LBIcon.png) -196px -1279px no-repeat;
+}
+
+.ico-remove-circle {
+    width: 42px;
+    height: 43px;
+    background: url(../ico/LBIcon.png) -339px -1197px no-repeat;
+}
+
+.ico-remove-circle-fill {
+    width: 38px;
+    height: 39px;
+    background: url(../ico/LBIcon.png) -341px -1279px no-repeat;
+}
+
+.ico-check-circle {
+    width: 42px;
+    height: 42px;
+    background: url(../ico/LBIcon.png) -484px -1198px no-repeat;
+}
+
+.ico-check-circle-fill {
+    width: 39px;
+    height: 39px;
+    background: url(../ico/LBIcon.png) -484px -1279px no-repeat;
+}
+
+.ico-cancel-circle {
+    width: 42px;
+    height: 42px;
+    background: url(../ico/LBIcon.png) -627px -1197px no-repeat;
+}
+
+.ico-cancel-circle-fill {
+    width: 38px;
+    height: 38px;
+    background: url(../ico/LBIcon.png) -629px -1279px no-repeat;
+}
+
+.ico-error-circle {
+    width: 42px;
+    height: 42px;
+    background: url(../ico/LBIcon.png) -771px -1197px no-repeat;
+}
+
+.ico-loading {
+    width: 31px;
+    height: 37px;
+    background: url(../ico/LBIcon.png) -920px -1199px no-repeat;
+}
+
+.ico-loading-fill {
+    width: 28px;
+    height: 38px;
+    background: url(../ico/LBIcon.png) -922px -1279px no-repeat;
+}
+
+.ico-print {
+    width: 39px;
+    height: 37px;
+    background: url(../ico/LBIcon.png) -1060px -1199px no-repeat;
+}
+
+.ico-print-fill {
+    width: 38px;
+    height: 36px;
+    background: url(../ico/LBIcon.png) -1061px -1280px no-repeat;
+}
+
+.ico-save {
+    width: 36px;
+    height: 38px;
+    background: url(../ico/LBIcon.png) -1206px -1199px no-repeat;
+}
+
+.ico-save-fill {
+    width: 34px;
+    height: 34px;
+    background: url(../ico/LBIcon.png) -1207px -1281px no-repeat;
+}
+
+.ico-sound-on {
+    width: 42px;
+    height: 34px;
+    background: url(../ico/LBIcon.png) -1348px -1201px no-repeat;
+}
+
+.ico-sound-on-fill {
+    width: 41px;
+    height: 29px;
+    background: url(../ico/LBIcon.png) -1348px -1284px no-repeat;
+}
+
+.ico-sound-off {
+    width: 42px;
+    height: 34px;
+    background: url(../ico/LBIcon.png) -1491px -1201px no-repeat;
+}
+
+.ico-sound-off-fill {
+    width: 39px;
+    height: 29px;
+    background: url(../ico/LBIcon.png) -1493px -1284px no-repeat;
+}
+
+.ico-lock {
+    width: 38px;
+    height: 40px;
+    background: url(../ico/LBIcon.png) -1637px -1198px no-repeat;
+}
+
+.ico-lock-fill {
+    width: 36px;
+    height: 38px;
+    background: url(../ico/LBIcon.png) -1638px -1278px no-repeat;
+}
+
+.ico-unlock {
+    width: 38px;
+    height: 40px;
+    background: url(../ico/LBIcon.png) -1781px -1198px no-repeat;
+}
+
+.ico-unlock-fill {
+    width: 36px;
+    height: 38px;
+    background: url(../ico/LBIcon.png) -1638px -1278px no-repeat;
+}
+
+.ico-calendar {
+    width: 38px;
+    height: 40px;
+    background: url(../ico/LBIcon.png) -197px -1503px no-repeat;
+}
+
+.ico-calendar-fill {
+    width: 38px;
+    height: 38px;
+    background: url(../ico/LBIcon.png) -197px -1583px no-repeat;
+}
+
+.ico-add-schedule {
+    width: 41px;
+    height: 38px;
+    background: url(../ico/LBIcon.png) -339px -1503px no-repeat;
+}
+
+.ico-add-schedule-fill {
+    width: 39px;
+    height: 38px;
+    background: url(../ico/LBIcon.png) -340px -1583px no-repeat;
+}
+
+.ico-schedule {
+    width: 42px;
+    height: 39px;
+    background: url(../ico/LBIcon.png) -482px -1503px no-repeat;
+}
+
+.ico-schedule-fill {
+    width: 40px;
+    height: 40px;
+    background: url(../ico/LBIcon.png) -484px -1584px no-repeat;
+}
+
+.ico-reservation {
+    width: 40px;
+    height: 41px;
+    background: url(../ico/LBIcon.png) -628px -1503px no-repeat;
+}
+
+.ico-reservation-fill {
+    width: 36px;
+    height: 37px;
+    background: url(../ico/LBIcon.png) -630px -1585px no-repeat;
+}
+
+.ico-time {
+    width: 42px;
+    height: 42px;
+    background: url(../ico/LBIcon.png) -771px -1501px no-repeat;
+}
+
+.ico-time-fill {
+    width: 39px;
+    height: 40px;
+    background: url(../ico/LBIcon.png) -772px -1582px no-repeat;
+}
+
+.ico-mail {
+    width: 42px;
+    height: 36px;
+    background: url(../ico/LBIcon.png) -915px -1504px no-repeat;
+}
+
+.ico-mail-fill {
+    width: 38px;
+    height: 32px;
+    background: url(../ico/LBIcon.png) -917px -1586px no-repeat;
+}
+
+.ico-resend {
+    width: 47px;
+    height: 36px;
+    background: url(../ico/LBIcon.png) -1056px -1504px no-repeat;
+}
+
+.ico-resend-fill {
+    width: 44px;
+    height: 35px;
+    background: url(../ico/LBIcon.png) -1059px -1586px no-repeat;
+}
+
+.ico-drafts {
+    width: 43px;
+    height: 43px;
+    background: url(../ico/LBIcon.png) -1202px -1501px no-repeat;
+}
+
+.ico-drafts-fill {
+    width: 40px;
+    height: 39px;
+    background: url(../ico/LBIcon.png) -1204px -1583px no-repeat;
+}
+
+.ico-mail-scheduled {
+    width: 45px;
+    height: 38px;
+    background: url(../ico/LBIcon.png) -1345px -1503px no-repeat;
+}
+
+.ico-mail-scheduled-fill {
+    width: 44px;
+    height: 36px;
+    background: url(../ico/LBIcon.png) -1347px -1585px no-repeat;
+}
+
+.ico-push {
+    width: 32px;
+    height: 41px;
+    background: url(../ico/LBIcon.png) -1496px -1501px no-repeat;
+}
+
+.ico-push-fill {
+    width: 27px;
+    height: 40px;
+    background: url(../ico/LBIcon.png) -1499px -1582px no-repeat;
+}
+
+.ico-mobile {
+    width: 32px;
+    height: 41px;
+    background: url(../ico/LBIcon.png) -1640px -1501px no-repeat;
+}
+
+.ico-mobile-fill {
+    width: 27px;
+    height: 40px;
+    background: url(../ico/LBIcon.png) -1642px -1582px no-repeat;
+}
+
+.ico-desktop {
+    width: 43px;
+    height: 37px;
+    background: url(../ico/LBIcon.png) -1778px -1504px no-repeat;
+}
+
+.ico-desktop-fill {
+    width: 40px;
+    height: 36px;
+    background: url(../ico/LBIcon.png) -1780px -1585px no-repeat;
+}
+
+.ico-send {
+    width: 38px;
+    height: 38px;
+    background: url(../ico/LBIcon.png) -197px -1807px no-repeat;
+}
+
+.ico-send-fill {
+    width: 38px;
+    height: 38px;
+    background: url(../ico/LBIcon.png) -197px -1887px no-repeat;
+}
+
+.ico-chat {
+    width: 38px;
+    height: 38px;
+    background: url(../ico/LBIcon.png) -341px -1807px no-repeat;
+}
+
+.ico-chat-fill {
+    width: 36px;
+    height: 38px;
+    background: url(../ico/LBIcon.png) -341px -1887px no-repeat;
+}
+
+.ico-call {
+    width: 38px;
+    height: 38px;
+    background: url(../ico/LBIcon.png) -485px -1807px no-repeat;
+}
+
+.ico-call-fill {
+    width: 36px;
+    height: 38px;
+    background: url(../ico/LBIcon.png) -485px -1887px no-repeat;
+}
+
+.ico-noti-on {
+    width: 38px;
+    height: 38px;
+    background: url(../ico/LBIcon.png) -629px -1807px no-repeat;
+}
+
+.ico-noti-on-fill {
+    width: 36px;
+    height: 38px;
+    background: url(../ico/LBIcon.png) -629px -1887px no-repeat;
+}
+
+.ico-noti-off {
+    width: 40px;
+    height: 38px;
+    background: url(../ico/LBIcon.png) -772px -1807px no-repeat;
+}
+
+.ico-noti-off-fill {
+    width: 39px;
+    height: 38px;
+    background: url(../ico/LBIcon.png) -772px -1887px no-repeat;
+}
+
+.ico-attachment {
+    width: 29px;
+    height: 38px;
+    background: url(../ico/LBIcon.png) -921px -1807px no-repeat;
+}
+
+.ico-link {
+    width: 36px;
+    height: 38px;
+    background: url(../ico/LBIcon.png) -1062px -1807px no-repeat;
+}
+
+.ico-notice {
+    width: 33px;
+    height: 35px;
+    background: url(../ico/LBIcon.png) -1207px -1808px no-repeat;
+}
+
+.ico-notice-fill {
+    width: 30px;
+    height: 31px;
+    background: url(../ico/LBIcon.png) -1209px -1891px no-repeat;
+}
+
+.ico-helpcenter {
+    width: 40px;
+    height: 42px;
+    background: url(../ico/LBIcon.png) -1348px -1805px no-repeat;
+}
+
+.ico-bulb {
+    width: 32px;
+    height: 42px;
+    background: url(../ico/LBIcon.png) -1496px -1805px no-repeat;
+}
+
+.ico-bulb-fill {
+    width: 28px;
+    height: 41px;
+    background: url(../ico/LBIcon.png) -1498px -1886px no-repeat;
+}
+
+.ico-infinity {
+    width: 43px;
+    height: 23px;
+    background: url(../ico/LBIcon.png) -1634px -1815px no-repeat;
+}
+
+
+.ico-key {
+    width: 36px;
+    height: 39px;
+    background: url(../ico/LBIcon.png) -1783px -1807px no-repeat;
+}
+
+.ico-key-fill {
+    width: 34px;
+    height: 36px;
+    background: url(../ico/LBIcon.png) -1783px -1889px no-repeat;
+}
+
+.ico-wifi {
+    width: 42px;
+    height: 30px;
+    background: url(../ico/LBIcon.png) -195px -2115px no-repeat;
+}
+
+.ico-wifi-fill {
+    width: 42px;
+    height: 40px;
+    background: url(../ico/LBIcon.png) -195px -2190px no-repeat;
+}
+
+.ico-cloud {
+    width: 44px;
+    height: 30px;
+    background: url(../ico/LBIcon.png) -337px -2114px no-repeat;
+}
+
+.ico-cloud-fill {
+    width: 39px;
+    height: 26px;
+    background: url(../ico/LBIcon.png) -340px -2197px no-repeat;
+}
+
+/****************************************************************************************************************/
+/** Format / Files **********************************************************************************************/
+
+.ico-list {
+    width: 41px;
+    height: 41px;
+    background: url(../ico/LBIcon.png) -195px -2581px no-repeat;
+}
+
+.ico-list-fill {
+    width: 35px;
+    height: 35px;
+    background: url(../ico/LBIcon.png) -198px -2662px no-repeat;
+}
+
+.ico-checklist {
+    width: 38px;
+    height: 38px;
+    background: url(../ico/LBIcon.png) -341px -2581px no-repeat;
+}
+
+.ico-checklist-fill {
+    width: 35px;
+    height: 35px;
+    background: url(../ico/LBIcon.png) -198px -2662px no-repeat;
+}
+
+.ico-description {
+    width: 36px;
+    height: 42px;
+    background: url(../ico/LBIcon.png) -486px -2580px no-repeat;
+}
+
+.ico-description-fill {
+    width: 30px;
+    height: 40px;
+    background: url(../ico/LBIcon.png) -489px -2660px no-repeat;
+}
+
+.ico-note {
+    width: 36px;
+    height: 42px;
+    background: url(../ico/LBIcon.png) -630px -2580px no-repeat
+}
+
+.ico-note-fill {
+    width: 30px;
+    height: 40px;
+    background: url(../ico/LBIcon.png) -633px -2660px no-repeat;
+}
+
+.ico-file-edit {
+    width: 39px;
+    height: 42px;
+    background: url(../ico/LBIcon.png) -772px -2580px no-repeat;
+}
+
+.ico-file-edit-fill {
+    width: 34px;
+    height: 40px;
+    background: url(../ico/LBIcon.png) -775px -2660px no-repeat;
+}
+
+.ico-file-download {
+    width: 36px;
+    height: 42px;
+    background: url(../ico/LBIcon.png) -918px -2580px no-repeat;
+}
+
+.ico-file-download-fill {
+    width: 31px;
+    height: 38px;
+    background: url(../ico/LBIcon.png) -920px -2662px no-repeat;
+}
+
+.ico-file-upload {
+    width: 36px;
+    height: 42px;
+    background: url(../ico/LBIcon.png) -1062px -2580px no-repeat;
+}
+
+.ico-file-upload-fill {
+    width: 31px;
+    height: 38px;
+    background: url(../ico/LBIcon.png) -1064px -2662px no-repeat;
+}
+
+.ico-pdf {
+    width: 42px;
+    height: 42px;
+    background: url(../ico/LBIcon.png) -1203px -2580px no-repeat;
+}
+
+.ico-pdf-fill {
+    width: 39px;
+    height: 39px;
+    background: url(../ico/LBIcon.png) -1203px -2661px no-repeat;
+}
+
+.ico-excel {
+    width: 42px;
+    height: 42px;
+    background: url(../ico/LBIcon.png) -1347px -2580px no-repeat;
+}
+
+.ico-excel-fill {
+    width: 37px;
+    height: 37px;
+    background: url(../ico/LBIcon.png) -1349px -2662px no-repeat;
+}
+
+.ico-copy {
+    width: 33px;
+    height: 44px;
+    background: url(../ico/LBIcon.png) -1495px -2578px no-repeat;
+}
+
+.ico-copy-fill {
+    width: 32px;
+    height: 40px;
+    background: url(../ico/LBIcon.png) -1497px -2659px no-repeat;
+}
+
+.ico-layout {
+    width: 39px;
+    height: 39px;
+    background: url(../ico/LBIcon.png) -1636px -2581px no-repeat;
+}
+
+.ico-layout-fill {
+    width: 36px;
+    height: 34px;
+    background: url(../ico/LBIcon.png) -1638px -2663px no-repeat;
+}
+
+.ico-template {
+    width: 39px;
+    height: 39px;
+    background: url(../ico/LBIcon.png) -1780px -2581px no-repeat;
+}
+
+.ico-template-fill {
+    width: 36px;
+    height: 35px;
+    background: url(../ico/LBIcon.png) -1782px -2663px no-repeat;
+}
+
+/****************************************************************************************************************/
+/** Person *************************************************&****************************************************/
+
+.ico-person {
+    width: 38px;
+    height: 40px;
+    background: url(../ico/LBIcon.png) -2021px -590px no-repeat;
+}
+
+.ico-person-fill {
+    width: 34px;
+    height: 32px;
+    background: url(../ico/LBIcon.png) -2023px -674px no-repeat;
+}
+
+.ico-add-person {
+    width: 42px;
+    height: 40px;
+    background: url(../ico/LBIcon.png) -2163px -590px no-repeat;
+}
+
+.ico-add-person-fill {
+    width: 42px;
+    height: 32px;
+    background: url(../ico/LBIcon.png) -2163px -674px no-repeat;
+}
+
+.ico-remove-person {
+    width: 42px;
+    height: 40px;
+    background: url(../ico/LBIcon.png) -2307px -590px no-repeat;
+}
+
+.ico-remove-person-fill {
+    width: 42px;
+    height: 32px;
+    background: url(../ico/LBIcon.png) -2307px -674px no-repeat;
+}
+
+.ico-group {
+    width: 40px;
+    height: 34px;
+    background: url(../ico/LBIcon.png) -2452px -593px no-repeat;
+}
+
+.ico-group-fill {
+    width: 38px;
+    height: 30px;
+    background: url(../ico/LBIcon.png) -2453px -675px no-repeat;
+}
+
+.ico-add-group {
+    width: 43px;
+    height: 31px;
+    background: url(../ico/LBIcon.png) -2594px -595px no-repeat;
+}
+
+.ico-add-group-fill {
+    width: 41px;
+    height: 26px;
+    background: url(../ico/LBIcon.png) -2596px -677px no-repeat;
+}
+
+.ico-remove-group {
+    width: 43px;
+    height: 31px;
+    background: url(../ico/LBIcon.png) -2738px -595px no-repeat;
+}
+
+.ico-remove-group-fill {
+    width: 39px;
+    height: 26px;
+    background: url(../ico/LBIcon.png) -2741px -677px no-repeat;
+}
+
+.ico-team {
+    width: 42px;
+    height: 31px;
+    background: url(../ico/LBIcon.png) -2883px -595px no-repeat;
+}
+
+.ico-team-fill {
+    width: 40px;
+    height: 25px;
+    background: url(../ico/LBIcon.png) -2883px -678px no-repeat;
+}
+
+.ico-acc-circle {
+    width: 44px;
+    height: 44px;
+    background: url(../ico/LBIcon.png) -3026px -588px no-repeat;
+}
+
+.ico-acc-circle-fill {
+    width: 44px;
+    height: 44px;
+    background: url(../ico/LBIcon.png) -3026px -668px no-repeat;
+}
+
+.ico-manage-acc {
+    width: 44px;
+    height: 37px;
+    background: url(../ico/LBIcon.png) -3169px -592px no-repeat;
+}
+
+.ico-manage-acc-fill {
+    width: 40px;
+    height: 34px;
+    background: url(../ico/LBIcon.png) -3172px -674px no-repeat;
+}
+
+.ico-search-person {
+    width: 42px;
+    height: 37px;
+    background: url(../ico/LBIcon.png) -3315px -592px no-repeat;
+}
+
+.ico-search-person-fill {
+    width: 40px;
+    height: 34px;
+    background: url(../ico/LBIcon.png) -3316px -674px no-repeat;
+}
+
+.ico-edit-group {
+    width: 41px;
+    height: 37px;
+    background: url(../ico/LBIcon.png) -3458px -592px no-repeat;
+}
+
+.ico-edit-group-fill {
+    width: 40px;
+    height: 34px;
+    background: url(../ico/LBIcon.png) -3460px -674px no-repeat;
+}
+
+.ico-adm-person {
+    width: 43px;
+    height: 37px;
+    background: url(../ico/LBIcon.png) -3602px -592px no-repeat;
+}
+
+.ico-adm-person-fill {
+    width: 42px;
+    height: 34px;
+    background: url(../ico/LBIcon.png) -3602px -674px no-repeat;
+}
+
+/****************************************************************************************************************/
+/** Service *****************************************************************************************************/
+
+.ico-company {
+    width: 38px;
+    height: 38px;
+    background: url(../ico/LBIcon.png) -2021px -1061px no-repeat;
+}
+
+.ico-company-fill {
+    width: 35px;
+    height: 34px;
+    background: url(../ico/LBIcon.png) -2023px -1143px no-repeat;
+}
+
+.ico-organization {
+    width: 38px;
+    height: 34px;
+    background: url(../ico/LBIcon.png) -2165px -1063px no-repeat;
+}
+
+.ico-award {
+    width: 41px;
+    height: 41px;
+    background: url(../ico/LBIcon.png) -2307px -1059px no-repeat;
+}
+
+.ico-award-fill {
+    width: 38px;
+    height: 35px;
+    background: url(../ico/LBIcon.png) -2309px -1143px no-repeat;
+}
+
+.ico-challenge {
+    width: 41px;
+    height: 38px;
+    background: url(../ico/LBIcon.png) -2451px -1061px no-repeat;
+}
+
+.ico-challenge-fill {
+    width: 39px;
+    height: 38px;
+    background: url(../ico/LBIcon.png) -2451px -1141px no-repeat;
+}
+
+.ico-add-challenge {
+    width: 41px;
+    height: 38px;
+    background: url(../ico/LBIcon.png) -2594px -1061px no-repeat;
+}
+
+.ico-add-challenge-fill {
+    width: 43px;
+    height: 39px;
+    background: url(../ico/LBIcon.png) -2594px -1140px no-repeat;
+}
+
+.ico-ranking {
+    width: 42px;
+    height: 40px;
+    background: url(../ico/LBIcon.png) -2740px -1060px no-repeat;
+}
+
+.ico-ranking-fill {
+    width: 43px;
+    height: 39px;
+    background: url(../ico/LBIcon.png) -2740px -1141px no-repeat;
+}
+
+.ico-community {
+    width: 42px;
+    height: 36px;
+    background: url(../ico/LBIcon.png) -2883px -1062px no-repeat;
+}
+
+.ico-community-fill {
+    width: 38px;
+    height: 31px;
+    background: url(../ico/LBIcon.png) -2886px -1145px no-repeat;
+}
+
+.ico-dashboard {
+    width: 40px;
+    height: 40px;
+    background: url(../ico/LBIcon.png) -3028px -1060px no-repeat;
+}
+
+.ico-dashboard-fill {
+    width: 36px;
+    height: 36px;
+    background: url(../ico/LBIcon.png) -3030px -1142px no-repeat;
+}
+
+.ico-dashboard-custom {
+    width: 40px;
+    height: 40px;
+    background: url(../ico/LBIcon.png) -3172px -1060px no-repeat;
+}
+
+.ico-dashboard-custom-fill {
+    width: 36px;
+    height: 36px;
+    background: url(../ico/LBIcon.png) -3174px -1142px no-repeat;
+}
+
+.ico-dashboard-setting {
+    width: 40px;
+    height: 40px;
+    background: url(../ico/LBIcon.png) -3316px -1060px no-repeat;
+}
+
+.ico-dashboard-setting-fill {
+    width: 36px;
+    height: 36px;
+    background: url(../ico/LBIcon.png) -3318px -1142px no-repeat;
+}
+
+.ico-project {
+    width: 42px;
+    height: 40px;
+    background: url(../ico/LBIcon.png) -3459px -1060px no-repeat;
+}
+
+.ico-project-fill {
+    width: 40px;
+    height: 40px;
+    background: url(../ico/LBIcon.png) -3459px -1142px no-repeat;
+}
+
+.ico-payment {
+    width: 44px;
+    height: 37px;
+    background: url(../ico/LBIcon.png) -3602px -1062px no-repeat;
+}
+
+.ico-payment-fill {
+    width: 40px;
+    height: 33px;
+    background: url(../ico/LBIcon.png) -3604px -1144px no-repeat;
+}
+
+.ico-analytics-line {
+    width: 40px;
+    height: 40px;
+    background: url(../ico/LBIcon.png) -2020px -1364px no-repeat;
+}
+
+.ico-analytics-fill {
+    width: 35px;
+    height: 35px;
+    background: url(../ico/LBIcon.png) -2022px -1446px no-repeat;
+}
+
+.ico-trend {
+    width: 39px;
+    height: 36px;
+    background: url(../ico/LBIcon.png) -2164px -1366px no-repeat;
+}
+
+.ico-trend-fill {
+    width: 35px;
+    height: 35px;
+    background: url(../ico/LBIcon.png) -2167px -1446px no-repeat;
+}
+
+.ico-stat {
+    width: 45px;
+    height: 45px;
+    background: url(../ico/LBIcon.png) -2305px -1362px no-repeat;
+}
+
+.ico-stat-fill {
+    width: 40px;
+    height: 40px;
+    background: url(../ico/LBIcon.png) -2308px -1444px no-repeat;
+}
+
+.ico-insight {
+    width: 45px;
+    height: 30px;
+    background: url(../ico/LBIcon.png) -2449px -1370px no-repeat;
+}
+
+.ico-dining {
+    width: 40px;
+    height: 40px;
+    background: url(../ico/LBIcon.png) -2596px -1364px no-repeat;
+}
+
+.ico-dining-fill {
+    width: 36px;
+    height: 36px;
+    background: url(../ico/LBIcon.png) -2598px -1446px no-repeat;
+}
+
+.ico-test {
+    width: 40px;
+    height: 40px;
+    background: url(../ico/LBIcon.png) -2740px -1364px no-repeat;
+}
+
+.ico-test-fill {
+    width: 36px;
+    height: 36px;
+    background: url(../ico/LBIcon.png) -2742px -1446px no-repeat;
+}
+
+.ico-profile {
+    width: 40px;
+    height: 40px;
+    background: url(../ico/LBIcon.png) -2884px -1364px no-repeat;
+}
+
+.ico-profile-fill {
+    width: 36px;
+    height: 36px;
+    background: url(../ico/LBIcon.png) -2886px -1446px no-repeat;
+}
+
+.ico-report {
+    width: 34px;
+    height: 40px;
+    background: url(../ico/LBIcon.png) -3031px -1364px no-repeat;
+}
+
+.ico-report-fill {
+    width: 32px;
+    height: 36px;
+    background: url(../ico/LBIcon.png) -3032px -1446px no-repeat;
+}
+
+.ico-grid-view {
+    width: 40px;
+    height: 40px;
+    background: url(../ico/LBIcon.png) -3172px -1364px no-repeat;
+}
+
+.ico-grid-view-fill {
+    width: 36px;
+    height: 36px;
+    background: url(../ico/LBIcon.png) -3174px -1446px no-repeat;
+}
+
+.ico-list-view {
+    width: 44px;
+    height: 36px;
+    background: url(../ico/LBIcon.png) -3314px -1366px no-repeat;
+}
+
+.ico-list-view-fill {
+    width: 40px;
+    height: 32px;
+    background: url(../ico/LBIcon.png) -3316px -1448px no-repeat;
+}
+
+.ico-table {
+    width: 44px;
+    height: 36px;
+    background: url(../ico/LBIcon.png) -3458px -1366px no-repeat;
+}
+
+.ico-table-fill {
+    width: 40px;
+    height: 32px;
+    background: url(../ico/LBIcon.png) -3460px -1449px no-repeat;
+}
+
+/****************************************************************************************************************/
+/** Arrow & Sign *****************************************************************************************************/
+
+.ico-clamp-down {
+    width: 32px;
+    height: 18px;
+    background: url(../ico/LBIcon.png) -2024px -1847px no-repeat;
+}
+
+.ico-clamp-up {
+    width: 32px;
+    height: 18px;
+    background: url(../ico/LBIcon.png) -2168px -1845px no-repeat;
+}
+
+.ico-clamp-left {
+    width: 18px;
+    height: 32px;
+    background: url(../ico/LBIcon.png) -2317px -1839px no-repeat;
+}
+
+.ico-clamp-right {
+    width: 18px;
+    height: 32px;
+    background: url(../ico/LBIcon.png) -2464px -1839px no-repeat;
+}
+
+.ico-expend-down {
+    width: 22px;
+    height: 15px;
+    background: url(../ico/LBIcon.png) -2605px -1847px no-repeat;
+}
+
+.ico-expend-down-fill {
+    width: 40px;
+    height: 40px;
+    background: url(../ico/LBIcon.png) -2596px -1914px no-repeat;
+}
+
+.ico-expend-up {
+    width: 22px;
+    height: 15px;
+    background: url(../ico/LBIcon.png) -2748px -1847px no-repeat;
+}
+
+.ico-expend-up-fill {
+    width: 40px;
+    height: 40px;
+    background: url(../ico/LBIcon.png) -2740px -1914px no-repeat;
+}
+
+.ico-expend-left {
+    width: 16px;
+    height: 20px;
+    background: url(../ico/LBIcon.png) -2896px -1844px no-repeat;
+}
+
+.ico-expend-left-fill {
+    width: 40px;
+    height: 40px;
+    background: url(../ico/LBIcon.png) -2884px -1914px no-repeat;
+}
+
+.ico-expend-right {
+    width: 16px;
+    height: 20px;
+    background: url(../ico/LBIcon.png) -3040px -1844px no-repeat;
+}
+
+.ico-expend-right-fill {
+    width: 40px;
+    height: 40px;
+    background: url(../ico/LBIcon.png) -3028px -1914px no-repeat;
+}
+
+.ico-arrow-down {
+    width: 28px;
+    height: 32px;
+    background: url(../ico/LBIcon.png) -3178px -1838px no-repeat;
+}
+
+.ico-arrow-down-fill {
+    width: 40px;
+    height: 40px;
+    background: url(../ico/LBIcon.png) -3172px -1914px no-repeat;
+}
+
+.ico-arrow-up {
+    width: 28px;
+    height: 32px;
+    background: url(../ico/LBIcon.png) -3322px -1838px no-repeat;
+}
+
+.ico-arrow-up-fill {
+    width: 40px;
+    height: 40px;
+    background: url(../ico/LBIcon.png) -3316px -1914px no-repeat;
+}
+
+.ico-arrow-left {
+    width: 32px;
+    height: 28px;
+    background: url(../ico/LBIcon.png) -3464px -1840px no-repeat;
+}
+
+.ico-arrow-left-fill {
+    width: 40px;
+    height: 40px;
+    background: url(../ico/LBIcon.png) -3316px -1914px no-repeat;
+}
+
+.ico-arrow-right {
+    width: 32px;
+    height: 28px;
+    background: url(../ico/LBIcon.png) -3608px -1840px no-repeat;
+}
+
+.ico-arrow-right-fill {
+    width: 40px;
+    height: 40px;
+    background: url(../ico/LBIcon.png) -3604px -1914px no-repeat;
+}
+
+.ico-undo {
+    width: 40px;
+    height: 32px;
+    background: url(../ico/LBIcon.png) -2020px -2141px no-repeat;
+}
+
+.ico-redo {
+    width: 40px;
+    height: 32px;
+    background: url(../ico/LBIcon.png) -2164px -2141px no-repeat;
+}
+
+.ico-sync {
+    width: 40px;
+    height: 40px;
+    background: url(../ico/LBIcon.png) -2308px -2138px no-repeat;
+}
+
+.ico-change {
+    width: 36px;
+    height: 36px;
+    background: url(../ico/LBIcon.png) -2453px -2140px no-repeat;
+}
+
+.ico-compare {
+    width: 36px;
+    height: 36px;
+    background: url(../ico/LBIcon.png) -2598px -2140px no-repeat;
+}
+
+.ico-refresh {
+    width: 36px;
+    height: 36px;
+    background: url(../ico/LBIcon.png) -2742px -2140px no-repeat;
+}
+
+.ico-download {
+    width: 44px;
+    height: 36px;
+    background: url(../ico/LBIcon.png) -2882px -2140px no-repeat;
+}
+
+.ico-upload {
+    width: 44px;
+    height: 36px;
+    background: url(../ico/LBIcon.png) -3026px -2140px no-repeat;
+}
+
+.ico-open-new {
+    width: 40px;
+    height: 36px;
+    background: url(../ico/LBIcon.png) -3170px -2140px no-repeat;
+}
+
+.ico-login {
+    width: 36px;
+    height: 36px;
+    background: url(../ico/LBIcon.png) -3320px -2140px no-repeat;
+}
+
+.ico-logout {
+    width: 36px;
+    height: 36px;
+    background: url(../ico/LBIcon.png) -3462px -2140px no-repeat;
+}
+
+.ico-sort {
+    width: 24px;
+    height: 36px;
+    background: url(../ico/LBIcon.png) -3612px -2140px no-repeat;
+}
+
+.ico-folding {
+    width: 40px;
+    height: 40px;
+    background: url(../ico/LBIcon.png) -2020px -2442px no-repeat;
+}
+
+.ico-unfolding {
+    width: 40px;
+    height: 40px;
+    background: url(../ico/LBIcon.png) -2164px -2442px no-repeat;
+}
+
+.ico-add {
+    width: 30px;
+    height: 30px;
+    background: url(../ico/LBIcon.png) -2314px -2448px no-repeat;
+}
+
+.ico-remove {
+    width: 28px;
+    height: 4px;
+    background: url(../ico/LBIcon.png) -2458px -2460px no-repeat;
+}
+
+.ico-chk {
+    width: 32px;
+    height: 22px;
+    background: url(../ico/LBIcon.png) -2599px -2450px no-repeat;
+}
+
+.ico-close {
+    width: 26px;
+    height: 26px;
+    background: url(../ico/LBIcon.png) -2748px -2450px no-repeat;
+}
+
+.ico-menu {
+    width: 32px;
+    height: 32px;
+    background: url(../ico/LBIcon.png) -2886px -2446px no-repeat;
+}
+
+.ico-sort-txt {
+    width: 32px;
+    height: 32px;
+    background: url(../ico/LBIcon.png) -3030px -2446px no-repeat;
+}
+
+.ico-filter-dot {
+    width: 36px;
+    height: 36px;
+    background: url(../ico/LBIcon.png) -3174px -2444px no-repeat;
+}
+
+.ico-doner {
+    width: 36px;
+    height: 32px;
+    background: url(../ico/LBIcon.png) -3318px -2446px no-repeat;
+}
+
+.ico-dot {
+    width: 20px;
+    height: 20px;
+    background: url(../ico/LBIcon.png) -3470px -2452px no-repeat;
+}
+
+.ico-dot-fill {
+    width: 20px;
+    height: 20px;
+    background: url(../ico/LBIcon.png) -3470px -2532px no-repeat;
+}
+
+.ico-menu-tree {
+    width: 20px;
+    height: 20px;
+    background: url(../ico/LBIcon.png) -3614px -2452px no-repeat;
+}
+
+.ico-menu-tree-fill {
+    width: 20px;
+    height: 20px;
+    background: url(../ico/LBIcon.png) -3614px -2532px no-repeat;
+}
+
+.ico-apps {
+    width: 40px;
+    height: 40px;
+    background: url(../ico/LBIcon.png) -2020px -2746px no-repeat;
+}
+
+.ico-more-horiz {
+    width: 40px;
+    height: 8px;
+    background: url(../ico/LBIcon.png) -2164px -2762px no-repeat;
+}
+
+.ico-drag-indicator {
+    width: 24px;
+    height: 36px;
+    background: url(../ico/LBIcon.png) -2316px -2748px no-repeat;
+}
+
+.ico-fullscreen {
+    width: 40px;
+    height: 40px;
+    background: url(../ico/LBIcon.png) -2452px -2746px no-repeat;
+}
+
+
+.ico-reduse {
+    width: 40px;
+    height: 40px;
+    background: url(../ico/LBIcon.png) -2596px -2746px no-repeat;
+}

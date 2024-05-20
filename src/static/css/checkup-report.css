@@ -1,0 +1,367 @@
+﻿.graph_wrap {
+    padding-bottom: 30px;
+}
+
+.graph_wrap .graph_inner {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    height: 300px;
+    /*padding-bottom: 86px;*/
+}
+.graph_wrap .graph_inner .graph_bg {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    align-items: flex-end;
+    /*padding: 0 15px;*/
+    height: 100%;
+    font-size: 0;
+    line-height: 0;
+    transform-origin: center;
+}
+
+.graph_wrap .graph_inner .graph_bg li {
+    position: relative;
+    display: inline-block;
+    /*width: 57px;*/
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.graph_wrap .graph_inner .graph_bg li .line {
+    position: absolute;
+    bottom: 0;
+    left: 2px;
+    transform: translateX(-50%);
+    display: block;
+    width: 2px;
+    border: none;
+    border-left: 2px dotted black;
+}
+.graph_wrap .graph_inner .graph_bg li .line.nodisp {
+    position: relative;
+    border: none;
+}
+.graph_wrap .graph_inner .graph_bg li:nth-child(1) .graph_point {
+    animation-delay: 0.1s;
+}
+
+.graph_wrap .graph_inner .graph_bg li:nth-child(2) .graph_point {
+    animation-delay: 0.2s;
+}
+
+.graph_wrap .graph_inner .graph_bg li:nth-child(3) .graph_point {
+    animation-delay: 0.3s;
+}
+
+.graph_wrap .graph_inner .graph_bg li:nth-child(4) .graph_point {
+    animation-delay: 0.4s;
+}
+
+.graph_wrap .graph_inner .graph_bg li:nth-child(5) .graph_point {
+    animation-delay: 0.5s;
+}
+
+.graph_wrap .graph_inner .graph_bg li:nth-child(6) .graph_point {
+    animation-delay: 0.6s;
+}
+
+.graph_wrap .graph_inner .graph_bg li:nth-child(7) .graph_point {
+    animation-delay: 0.7s;
+}
+
+.graph_wrap .graph_inner .graph_bg li:nth-child(8) .graph_point {
+    animation-delay: 0.8s;
+}
+
+.graph_wrap .graph_inner .graph_bg li:nth-child(9) .graph_point {
+    animation-delay: 0.9s;
+}
+
+.graph_wrap .graph_inner .graph_bg li:nth-child(10) .graph_point {
+    animation-delay: 1s;
+}
+
+.graph_point {
+    position: absolute;
+    /*z-index: 1;*/
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 10px;
+    height: 10px;
+    border: 2px solid #FFFF;
+    border-radius: 100%;
+    left: -4px;
+    cursor: pointer;
+    transform: scale(0);
+    animation: points 0.2s forwards;
+}
+
+    .graph_point > * {
+        pointer-events: none;
+    }
+
+    .graph_point[aria-expanded="false"] + .graph_tip {
+        display: none;
+    }
+
+.a11y {
+    position: absolute;
+    overflow: hidden;
+    height: 1px;
+    width: 1px;
+    border: 0;
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    word-break: initial;
+    word-wrap: initial;
+}
+
+.graph_tip {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    text-align: center;
+    transform: translate(-50%, 0%);
+    z-index: 10;
+}
+
+    .graph_tip strong {
+        color: #000;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 1;
+    }
+
+    .graph_tip .tooltip .title {
+        width: 100%;
+        font-size: 14px;
+        color: var(--718093-contents-icon-1);
+        margin: 0;
+    }
+
+    .graph_tip .tooltip .align-right img {
+        width: 16px;
+        display: inline-flex;
+        margin-right: 6px;
+        vertical-align: middle;
+    }
+
+accumulate-bar-graph .graph_tip .tooltip .category > span {
+    white-space: nowrap;
+}
+
+accumulate-bar-graph .graph_tip .tooltip .category .align-right > span {
+    color: var(--dcdfe-3-border-1);
+}
+
+accumulate-bar-graph .graph_tip .tooltip .category.over {
+    border-top: 1px solid #ccc;
+    margin: 20px 0 0 0;
+    padding: 10px 0 2px 0;
+}
+
+
+
+
+/*    .graph_tip:after {
+        display: block;
+        content: '';
+        clear: both;
+        position: absolute;
+        z-index: 11;
+        left: 12px;
+        bottom: -6px;
+        width: 0;
+        height: 0;
+        border: 6px solid transparent;
+        border-bottom-width: 0;
+        border-left-width: 5px;
+        border-right-width: 5px;
+        pointer-events: none;
+        border-top-color: #6910ef;
+    }*/
+.graph_line, .acc_graph_line {
+    position: absolute;
+    top: 0;
+    width: calc(100% - 12px);
+    height: 300px;
+    transform: scaleY(-1) scaleX(1);
+    transform-origin: center;
+}
+
+.graph_back {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width:100%;
+    height: 300px;
+    /*transform: scaleY(-1) scaleX(1);*/
+    transform-origin: center;
+}
+
+    .graph_back svg {
+        fill: none;
+        width: 0;
+        animation: polyline 2s forwards;
+    }
+    .graph_line svg, .acc_graph_line svg {
+        fill: none;
+        width: 0;
+        animation: polyline 2s forwards;
+    }
+
+    .graph_line svg polyline {
+        stroke: #b3bbc5;
+        stroke-width: 2px;
+    }
+    .acc_graph_line svg polyline {
+        stroke: #182031;
+        stroke-width: 2px;
+    }
+
+@keyframes polyline {
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes points {
+    to {
+        transform: scale(1);
+    }
+}
+.axis path,
+.axis line {
+    fill: none;
+    shape-rendering: crispEdges;
+    stroke-width: 1.5;
+}
+
+.normal {
+    fill: #47b998;
+    opacity: 0.7
+}
+
+.attention {
+    fill: #8abf12;
+    opacity: 0.7
+}
+
+.pre-phase {
+    fill: #ffd027;
+    opacity: 0.7
+}
+
+.phase1 {
+    fill: #ef8100;
+    opacity: 0.7
+}
+
+.phase2 {
+    fill: #cc1f3b;
+    opacity: 0.7
+}
+
+.dot {
+    fill: red;
+    opacity: 0.7
+}
+
+.doughnutPath:hover {
+    transform: scale(1.1);
+}
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+    color: #333;
+    width: max-content;
+}
+
+    .tooltip .title {
+        border-bottom: 1px solid #ccc;
+    }
+
+    .tooltip .category {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+    }
+
+    .tooltip .align-left {
+        text-align: left;
+        margin-right: 20px;
+        color: var(--3-d-4861-title-icon-2);
+    }
+
+    .tooltip .align-right {
+        text-align: right;
+        font-weight: bold;
+        color: var(--3-d-4861-title-icon-2);
+    }
+
+    .tooltip::before, .tooltip::after {
+        content: "";
+        position: absolute;
+        bottom: -10px;
+        left: 50%;
+        transform: translateX(-50%);
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+    }
+
+    .tooltip::before {
+        border-top: 10px solid #ccc; /* Triangle Border */
+        bottom: -11px; /* Adjust this value to shift the triangle position up or down */
+    }
+
+    .tooltip::after {
+        border-top: 10px solid white; /* Triangle Fill */
+    }
+
+line-graph .graph_tip {
+    position: relative;
+}
+
+
+.graph_tip.left {
+}
+
+.graph_tip.right {
+}
+
+    .graph_tip.left .tooltip::before, .graph_tip.left .tooltip::after {
+        left: 13%;
+    }
+
+    .graph_tip.right .tooltip::before, .graph_tip.right .tooltip::after {
+        left: 87%;
+    }
+
+.graph_tip.upper {
+}
+
+    .graph_tip.upper .tooltip::before, .graph_tip.upper .tooltip::after {
+        border-top: unset;
+    }
+    .graph_tip.upper .tooltip::before {
+        border-bottom: 10px solid #ccc;
+        bottom: 123px;
+    }
+
+    .graph_tip.upper .tooltip::after {
+        border-bottom: 10px solid white;
+        bottom: 122px;
+    }
+
+.triangle {
+    border-bottom: 10px solid transparent;
+}
