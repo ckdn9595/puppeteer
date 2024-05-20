@@ -59,13 +59,14 @@ const bodyWidth = 1500;
 
         //컴포넌트 페이지 안짤리고 한 페이지에 인쇄되도록 높이를 확인해 css 조절
         const pageHeight = 11 * dpi / scale;  //letter의 세로 크기는 11인치
+        console.log(pageHeight)
         const components = document.querySelectorAll('.component');
 
         let accumulatedHeight = 0;
 
         components.forEach((component, index) => {
             const componentHeight = component.offsetHeight;
-
+            console.log(componentHeight)
             // 현재 컴포넌트를 추가했을 때 페이지 높이를 초과하는지 검사
             if (accumulatedHeight + componentHeight > pageHeight) {
                 // 페이지 높이를 초과하면 이전 컴포넌트에 페이지 브레이크를 적용
@@ -79,7 +80,7 @@ const bodyWidth = 1500;
             }
         });
 
-        document.body.style.width = `${100 / scale}%`; // 스케일링 후 너비 조정으로 원래의 페이지 비율을 유지
+        //document.body.style.width = `${100 / scale}%`; // 스케일링 후 너비 조정으로 원래의 페이지 비율을 유지
     });
     // page.pdf() is currently supported only in headless mode.
     // @see https://bugs.chromium.org/p/chromium/issues/detail?id=753118
