@@ -10,6 +10,7 @@ bin/
 **/*.tsbuildinfo
 *.api.json
 *.tgz
+*.pdf
 yarn.lock
 .docusaurus/
 .cache-loader
